@@ -1,0 +1,23 @@
+/*
+Keka Attendance Helper
+Version: 2.2.0 (STABLE)
+Locked Release
+Date: 2026
+
+Do not modify this file directly.
+Create a new version if changes are required.
+*/
+{
+  "manifest_version": 3,
+  "name": "Keka Attendance Helper",
+  "version": "2.2.0",
+  "description": "Stable version – shows worked hours, remaining time and completion estimate on Keka attendance page.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.keka.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
